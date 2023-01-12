@@ -1,2 +1,3 @@
 # ui-template
-Template for Stencil.JS UI project.
+
+Template for Stencil.JS and smoothly UI project.
