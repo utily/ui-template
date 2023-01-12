@@ -11,7 +11,9 @@
 		"node_modules": true,
 		"*.code-workspace": true,
 		"*.config.js": true,
-		"*.toml": true
+		"*.toml": true,
+		"*.config.ts": true,
+		"www/": true
 	},
 	// Make it possible to open excluded files with Ctrl + P
 	"search.exclude": {
@@ -25,7 +27,9 @@
 		"node_modules": false,
 		"*.code-workspace": false,
 		"*.config.js": false,
-		"*.toml": false
+		"*.toml": false,
+		"*.config.ts": false,
+		"www/": false
 	},
 	"files.insertFinalNewline": true,
 	"editor.tabSize": 2,

@@ -8,7 +8,7 @@ import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface AppHome {
     }
-    interface AppRoot {
+    interface TemplatePortal {
     }
 }
 declare global {
@@ -18,25 +18,25 @@ declare global {
         prototype: HTMLAppHomeElement;
         new (): HTMLAppHomeElement;
     };
-    interface HTMLAppRootElement extends Components.AppRoot, HTMLStencilElement {
+    interface HTMLTemplatePortalElement extends Components.TemplatePortal, HTMLStencilElement {
     }
-    var HTMLAppRootElement: {
-        prototype: HTMLAppRootElement;
-        new (): HTMLAppRootElement;
+    var HTMLTemplatePortalElement: {
+        prototype: HTMLTemplatePortalElement;
+        new (): HTMLTemplatePortalElement;
     };
     interface HTMLElementTagNameMap {
         "app-home": HTMLAppHomeElement;
-        "app-root": HTMLAppRootElement;
+        "template-portal": HTMLTemplatePortalElement;
     }
 }
 declare namespace LocalJSX {
     interface AppHome {
     }
-    interface AppRoot {
+    interface TemplatePortal {
     }
     interface IntrinsicElements {
         "app-home": AppHome;
-        "app-root": AppRoot;
+        "template-portal": TemplatePortal;
     }
 }
 export { LocalJSX as JSX };
@@ -44,7 +44,7 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "app-home": LocalJSX.AppHome & JSXBase.HTMLAttributes<HTMLAppHomeElement>;
-            "app-root": LocalJSX.AppRoot & JSXBase.HTMLAttributes<HTMLAppRootElement>;
+            "template-portal": LocalJSX.TemplatePortal & JSXBase.HTMLAttributes<HTMLTemplatePortalElement>;
         }
     }
 }
