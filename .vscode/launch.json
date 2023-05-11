@@ -7,6 +7,28 @@
 			"name": "Launch Program",
 			"program": "${workspaceFolder}/dist/index.js",
 			"preLaunchTask": "build"
+		},
+		{
+			"name": "Debug app",
+			"type": "chrome",
+			"request": "launch",
+			"sourceMaps": true,
+			"url": "http://localhost:3333",
+			"webRoot": "${workspaceFolder}/www",
+			"sourceMapPathOverrides": {
+				"webpack:///*": "${webRoot}/build/*",
+				"/./*": "${webRoot}/build/*",
+				"/*": "${webRoot}/build/*",
+				"src/*": "${webRoot}/../src/*",
+				"./src/*": "${webRoot}/../src/*",
+				"/src/*": "${webRoot}/../src/*",
+				"../src/*": "${webRoot}/../../src/*",
+				"./../src/*": "${webRoot}/../../src/*",
+				"/../src/*": "${webRoot}/../../src/*",
+				"~/src/*": "${webRoot}/../../src/*",
+				"./~/*": "${webRoot}/../../src/*",
+				"/~/*": "${webRoot}/../../src/*"
+			}
 		}
 	]
 }
