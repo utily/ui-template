@@ -13,7 +13,7 @@ export const config: Config = {
 			buildDir: "",
 			// comment the following line to disable service workers in production
 			serviceWorker: null,
-			baseUrl: 'http://localhost:3333/',
+			baseUrl: "http://localhost:3333/",
 		},
 	],
 }
